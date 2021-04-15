@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Ninja Fingers</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="ninja">
+        <h1>Ninja Fingers</h1>
+        <img src="img/ninja.png" alt="ninja" />
+      </div>
+
+      <p id="frase" class="texto"></p>
+      <button id="botao-frase">Gerar Frase</button>
+
+      <ul class="dados">
+        <li class="fonte-palavras">
+          <img class="teclado" src="img/teclado.png" alt="palavras" />
+          <p><span id="numero-de-palavras"> </span> palavras</p>
+        </li>
+
+        <li class="fonte-segundos">
+          <img class="relogio" src="img/relogio.png" alt="segundos" />
+          <p><span id="tempo-digitacao">60</span> segundos</p>
+        </li>
+      </ul>
+
+      <textarea class="campo-digitacao"></textarea>
+
+      <div class="botoes">
+        <button
+          class="btn-reset"
+          title="Reiniciar: Esta técnica Milenar só funciona quando o tempo zerar"
+        >
+          <a class="btn-floating waves-effect waves-light green"
+            ><i class="material-icons">replay</i></a
+          >
+        </button>
+        <button
+          class="btn-placar"
+          title="Mostre/esconda os melhores Ninjas até o momento!"
+        >
+          <a class="btn-floating waves-effect waves-light blue"
+            ><i class="material-icons">assignment</i></a
+          >
+        </button>
+      </div>
+      <ul class="contadores">
+        <li><span id="contador-caracteres">0</span> caracteres</li>
+        <li><span id="contador-palavras">0</span> palavras</li>
+      </ul>
+      <section class="placar">
+        <h3>Placar</h3>
+        <table class="centered bordered">
+          <thead>
+            <tr>
+              <th class="usuario">Usuário</th>
+              <th class="palavras">No. de palavras</th>
+              <th>Remover</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="padrao">
+              <td></td>
+              <td></td>
+              <td>
+                <a href="#" class="dados-usuario">
+                  <i
+                    class="material-icons icone-delete"
+                    style="color: darkslategray"
+                    >delete</i
+                  >
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </section>
+  </body>
+  <script src="js/jquery.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/placar.js"></script>
+  <script src="js/frases.js"></script>
+</html>
